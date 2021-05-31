@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="sign_up.css">
-    <script src="sign_up.js"></script>
+    <title>SignUp</title>
 </head>
-<body class='body'>
-    <h1 class="h">Sign Up</h1>
-    <br>    
-    <input  id="first" placeholder="Enter Your Name" class="sign_up_box" ></input><br><br>
-    <input  id="second" placeholder="Enter Your Username" class="sign_up_box" ></input><br><br>
-    <input type="number" id="third" placeholder="Enter Your Phone Number" class="sign_up_box" ></input><br><br>
-    <input  id="fourth" placeholder="Enter Your State" class="sign_up_box" ></input><br><br>
-    <input id="fifth" type="password" id="second" placeholder="Enter Your Password"class="sign_up_box"></input><br><br><br>
-    <button type="button" id="butt" class="buttonbox">Sign Up</button>
-    <p id="para"></p>
+<body style="max-width: 400px; margin-left: 40%;font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 13%;  background-size: cover;background-image:url('data:image/jpeg;base64,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');">
+    <form action="/" method="POST">
+        <h1>SignUp</h1>
+        UserName: <input style="border-radius: medium;" type="text" name="username"> <br><br>
+        Name: <input style="border-radius: medium;"type="text" name="name"><br><br>
+        Phone: <input style="border-radius: medium;"type="text" name="phone"> <br><br>
+        Password: <input style="border-radius: medium;"type="text" name="password"> <br><br>
+        Email: <input style="border-radius: medium;"type="text" name="email"> <br><br>
+        <input style="font-size: medium;font-family:'Times New Roman', Times, serif;" type="submit" value="Submit"><br><br>
+    </form>
 </body>
-</html>x
+</html>

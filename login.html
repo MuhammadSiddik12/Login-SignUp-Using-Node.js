@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
+    <title>Login</title>
 </head>
-<body class='body'>
-    <center class="all">
-    <br><br><br><br><br><br>
-    <input id="first" placeholder="Enter A Username" class="loginbox" ></input><br><br>
-    <input type="password" id="second" placeholder="Enter Your Password"class="loginbox"></input><br><br><br>
-    <button type="button" id="butt" class="buttonbox">Login </button>
-    </center>
-    <p id="para"></p>
+<body style="max-width: 400px; margin-left: 40%;font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 13%;  background-size: cover;background-image:url('https://cdn.pixabay.com/photo/2020/02/19/22/57/blue-background-4863452_1280.jpg');">
+    <form action="/login" method="POST">
+        <h1>Login</h1>
+        UserName: <input style="border-radius: medium;" type="text" name="username"> <br><br>
+        Password: <input style="border-radius: medium;"type="text" name="password"> <br><br>
+        <input style="font-size: medium;font-family:'Times New Roman', Times, serif;" type="submit" value="Submit"><br><br>
+    </form>
 </body>
-</html> 
+</html>
